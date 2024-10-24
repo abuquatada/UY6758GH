@@ -1,0 +1,102 @@
+User Guide
+Once the project is running, follow the instructions below to use the application.
+
+1. User Registration and Login
+Upon starting the application, you will be prompted to either Sign Up (create an account) or Sign In (log in to an existing account).
+
+Sign Up:Type su when prompted.
+You will be asked to enter a username and password.
+Once registered, you can log in to start managing your finances.
+
+Sign In: Type si when prompted.
+Enter your username and password to access your account.
+
+2. Main Menu Options
+After successfully logging in, you will see the following menu options:
+    1. Add Income
+    2. Add Expense
+    3. Update Income/Expense
+    4. Delete Income/Expense
+    5. Generate Financial Report
+    6. Set Monthly Budget
+    7. Check Budget Status
+    8. Calculate Total Income, Expenses, and Savings
+    9. Exit
+
+3. Adding Income
+    To add income:
+     1.Select option 1 from the menu.
+     2.Enter the following details when prompted:
+        -Income amount
+        -Income category (e.g., Salary, Freelance)
+        -Description of the income (e.g., March salary) 
+
+4. Adding Expense
+    To add an expense:
+     1.Select option 2 from the menu.
+     2.Enter the following details when prompted:
+        Expense amount
+        Expense category (e.g., Rent, Groceries)
+    Description of the expense (e.g., Grocery shopping for the week).The system will automatically check if the expense exceeds the set budget for that category, and a warning will be displayed if the limit is exceeded.        
+
+5. Update Income/Expense
+    To update an existing income or expense entry:
+     1.Select option 3 from the menu.
+     2.Specify whether you're updating an income or expense entry.
+     3.Provide the entry ID and the updated amount, category, and description.
+
+6. Delete Income/Expense
+    To delete an existing income or expense entry:
+     1.Select option 4 from the menu.
+     2.Specify whether you're deleting an income or expense entry.
+     3.Provide the entry ID to delete the entry. 
+
+7. Generate Financial Reports
+    To generate a financial report for a specific period:
+     1.Select option 5 from the menu.
+     2.Choose the time period:
+        Month: Provide the month and year (e.g., March 2024).
+        Year: Provide the year (e.g., 2024).
+        All Time: Leave the prompt blank for all-time reports.
+    The system will display total income, total expenses, and savings for the specified period.     
+
+8. Set Monthly Budget
+    To set a budget for a specific category:
+     1.Select option 6 from the menu.
+     2.Enter the category (e.g., Groceries) and the budget amount (e.g., 500).
+
+9. Check Budget Status
+    To check if your spending has exceeded the budget for a category:
+     1.Select option 7 from the menu.
+     2.Enter the category you want to check (e.g., Groceries).
+     3.The system will show your current expenses for the category and notify you if you have exceeded the budget.
+
+10. Calculate Total Income, Expenses, and Savings
+    To calculate your total financial status:
+     1.Select option 8 from the menu.
+     2.Specify the period (monthly, yearly, or all time).
+    The system will display your total income, total expenses, and savings for the selected period.     
+
+
+11. Exit the Application
+    Select option 9 to exit the application.    
+
+
+Database Management
+
+You can directly manage the SQLite database (finance.db) using the SQLite Command-Line Interface (CLI) or a GUI tool like DB Browser for SQLite.
+You can insert, update, or query data directly from the database as needed.    
+
+Common Issues
+ 1. SQLite Database File Not Found
+    If the database file is not created, ensure you have the correct file permissions in the directory where you’re running the project. If needed, you can manually create the database file using SQLite commands.
+
+ 2. Data Not Saved
+    Ensure that all commit operations are performed after each insertion or update. The system automatically commits changes to the database, but if you encounter issues, check that the conn.commit() statement is executed after each transaction.
+
+ 3. Forgotten Username/Password
+    If you forget your username or password, you can either:
+        -Check the users table in the SQLite database directly using a database management tool.
+        -Alternatively, you may need to delete the existing user in the database and create a new one.
+
+Let me know if you need additional details! abuquatada84@gmail.com        
